@@ -1,0 +1,16 @@
+/*
+Theme Name: pharos
+Theme URI:
+Author: Tobbe Thun
+Author URI:
+Description: pharos
+Version: 1.0
+*/
+
+.box {
+	background-color: white;
+}
+
+.audioplayer {
+	display: none;
+}
