@@ -20,7 +20,6 @@ register_sidebar(array( // gör så att sidebar funkar
 	));
 
 
-
 // breadcrumb function
 
 function get_breadcrumb() {
