@@ -25,7 +25,12 @@ if(have_posts()) {
             <h1><?php the_title(); ?></h1>
           </div>
           <?php if ( '' !== get_post()->post_content ) { ?>
-            <img src="<?php bloginfo('template_url'); ?>/images/speaker-symbol.png" class="startpage-section__speaker first-content--speaker" alt="Högtalar ikon">
+            <?php $media = get_attached_media( 'audio', $post->ID  );
+             if (count($media) > 0) { ?>
+                <img src="<?php bloginfo('template_url'); ?>/images/speaker-symbol.png" class="startpage-section__speaker first-content--speaker" alt="Högtalar ikon">
+             <?php
+             }
+            ?>
             <div class="pharos-page__text">
               <?php the_content(); ?>
             </div>
