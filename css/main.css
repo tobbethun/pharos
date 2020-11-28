@@ -208,8 +208,16 @@
   }
 }
 .main-image {
-  height: 83vh;
+  height: 40vh;
+  background-attachment: scroll;
 }
+@media screen and (min-width: 1024px) {
+  .main-image {
+    height: 83vh;
+    background-attachment: fixed;
+  }
+}
+
 .startpage-section__title {
   display: -ms-flexbox;
   display: flex;
@@ -252,8 +260,14 @@
 }
 .main-title {
   position: absolute;
-  top: -41.5vh;
+  top: -21.5vh;
 }
+@media screen and (min-width: 1024px) {
+  .main-title {
+    top: -41.5vh;
+  }
+}
+
 .startpage-section__text {
   margin: 30px auto 50px;
   max-width: 1920px;
